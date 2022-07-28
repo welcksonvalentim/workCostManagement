@@ -7,7 +7,6 @@ const getAllList = async () => {
 };
 
 const createOne = async (nomeObra, cidade, rua, numero) => {
-  const data = new Date();
   const task = await Construction.create({ nomeObra, cidade, rua, numero });
   if (!task) return null;
   return task;

@@ -12,6 +12,7 @@ const getAllConstruction = async (_req, res) => {
 
 const createConstruction = async (req, res) => {
   try {
+    console.log("zzzzzzz", req.body);
     const {nomeObra, cidade, rua, numero} = req.body;
     const task = await constructionService.createOne(nomeObra, cidade, rua, numero);
     res.status(200).json(task);
