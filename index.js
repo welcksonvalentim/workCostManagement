@@ -5,7 +5,7 @@ require('dotenv').config();
 const cors = require('cors');
 
 const constructionController = require('./controller/construction');
-const loginController = require('./controllers/loginController');
+const loginController = require('./controller/loginController');
 const validation = require('./middlewares/validation');
 
 const { isEmail, isPassword } = validation;

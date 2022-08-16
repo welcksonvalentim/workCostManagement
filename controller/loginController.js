@@ -1,4 +1,4 @@
-const { createToken } = require('../utilis/createToken');
+const { createToken } = require('../utils/utils');
 
 const { User } = require('../models');
 
